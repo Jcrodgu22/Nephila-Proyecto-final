@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #26466F;
+}
+
+.form-control{
+    width: 300px;
+}
+
+.card{
+margin-left: 40px;
+margin-top: 30px;
+width: 480px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0,15);
+
+}
+.cards{
+    display: flex;
+
+}
+
+.list-group{
+    width: 200px;
+    margin-top: 30px;
+}
+
+.store{
+    display: flex;
+}
