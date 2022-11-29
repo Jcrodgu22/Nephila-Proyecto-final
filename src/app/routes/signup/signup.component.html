@@ -1,1 +1,188 @@
-<p>signup works!</p>
+<div class="d-flex justify-content-center p-1 ">
+  
+    <div class="border p-10 rounded border-5 p-3 shadow p-3 mb-5 bg-body rounded" style="width: 40rem">
+      
+      <div class="h4 pb-2 mb-4 text-dark border-bottom border-blue shadow p-3 mb-5 bg-body rounded">
+       
+        <h3 class="text-center pb-3 fw-bold">REGISTRO</h3>
+        <h5 class="text-center pb-3 text-dark opacity-50 fst-italic">Ingresa la información y haz parte de Nephila</h5>
+      </div>
+    
+      <form #userForm=""> 
+        <div class ="mb-3 fs-5">
+        <i class="material-icons pe-2">business</i>
+      <label for="name" class="form-label">Escribe el nombre de tu empresa</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        placeholder=""
+        name="firstName"
+        />
+        </div>
+    
+        <div class="mb-3 fs-5">  
+          <i class="material-icons pe-2">branding_watermark</i>
+            <label for="name" class="form-label">Ingresa el Nit</label>  
+            <input
+              type="text"
+              class="form-control"
+              id="nit"
+              placeholder=""
+              name="lastName"
+              
+            />
+          </div>
+    
+          <div class="mb-3 fs-5">
+            <i class="material-icons pe-2">mail</i>
+            <label for="name" class="form-label">Ingresa el Correo electrónico</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder=""
+              name="email"
+              
+            />
+          </div>
+    
+          <div class="mb-3 fs-5">
+            <i class="material-icons pe-2">groups</i>
+            <label for="name" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Escribe una contraseña"
+              name="password"
+             
+            />
+          </div>
+    
+          <div class="mb-3 fs-5">
+            <i class="material-icons pe-2">lock</i>
+            <label for="name" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confirmPassword"
+              placeholder="Confirma la contraseña"
+              name="confirmPassword"
+              
+            />
+            
+              <div
+                class="form-text text-danger"
+                
+              >
+                Las contraseñas no coinciden
+              </div>
+    
+              <ng-template #passwordsMatch>
+                <div class="form-text text-success">Las contraseñas coinciden</div>
+              </ng-template>
+            </div>
+    
+      <div class="form-group">
+        
+        <label class="col-md-12 control-label" for="Lista De Seleccion">¿En que Departamento está ubicada tu Empresa?</label>
+          <div class="col-md-12 p-6">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                   <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                </select>
+              </div>
+              <div class="form-group">
+                
+                <label class="col-md-15 control-label" for="radios">¿A qué sector pertenece tu empresa?</label>
+              
+                <div class="col-md-25"> 
+                <label class="radio-inline" for="radios-0">
+                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Sector Alimentos">  S. Alimentos
+                          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Sector Aseo">  S. Aseo
+                          <input type="checkbox" name="checkboxes" id="checkboxes-2" value="Sector Escolar"> S.Escolar
+                          <input type="checkbox" name="checkboxes" id="checkboxes-3" value="Sector Tecnología"> S. Tecnología
+              
+                  
+                            
+                            <div class="form-group">
+                <label class="col-md-15 control-label" for="radios">¿Tu empresa cuenta con logística?</label>
+               
+                <div class="col-md-25"> 
+                  <label class="radio-inline" for="radios-0">
+                      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Sector Alimentos">  Si
+                          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Sector Aseo">  No
+    
+    
+    
+                          <div class="mb-3 fs-5">
+                            <i class="material-icons pe-2">agriculture</i>
+                            <label for="question1" class="form-label">¿Cuál es la capacidad máxima de producción de tu empresa?.</label>
+                            
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="question1"
+                              placeholder=""
+                              name="question1"
+                              
+                            />
+                          </div>
+    
+                          <div class="mb-3 fs-5">
+                            <i class="material-icons pe-2">account_balance</i>
+                            <label for="question1" class="form-label">¿Cuál es la capacidad mínima de crédito de tu empresa?.</label>
+                            
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="question2"
+                              placeholder=""
+                              name="question2"
+                              
+                            />
+                          </div>
+                        
+                        
+                                              
+                          <div class="vstack gap-2 col-md-5 mx-auto">
+                            <button type="submit" class="btn btn-dark">GUARDAR</button>
+                            <button type="delete" class="btn btn-outline-dark">BORRAR</button>
+                          </div>
+                        
+    
+    
+            
+    
