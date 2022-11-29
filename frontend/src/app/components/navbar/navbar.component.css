@@ -1,0 +1,15 @@
+.bg-blue{
+    background-color: #02152b;
+}
+.Nav_text{
+    margin-left: -10vw;
+}
+.text-gold{
+    color: #99804e;
+}
+.text-gold:hover{
+    color: #e9b753;
+}
+.logo{
+    width: 11vw;
+}
