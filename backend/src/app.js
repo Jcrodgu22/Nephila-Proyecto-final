@@ -5,7 +5,7 @@ const app = express()
 const port = 5000
 
 //middelwares
-/* require("./database") */
+require("./database")
 app.use(cors())
 app.use(express.json())
 
