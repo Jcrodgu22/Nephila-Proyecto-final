@@ -13,7 +13,6 @@ import { LoginComponent } from './routes/login/login.component';
 import { Page404Component } from './routes/page404/page404.component';
 import { SignupComponent } from './routes/signup/signup.component';
 import { StoreComponent } from './routes/store/store.component';
-import { ServicesComponent } from './routes/services/services.component';
 import { WeAreComponent } from './routes/we-are/we-are.component';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { WeAreComponent } from './routes/we-are/we-are.component';
     Page404Component,
     SignupComponent,
     StoreComponent,
-    ServicesComponent,
     WeAreComponent
   ],
   imports: [
