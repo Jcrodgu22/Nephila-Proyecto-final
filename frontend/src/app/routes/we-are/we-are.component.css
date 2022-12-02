@@ -1,0 +1,44 @@
+body{
+    background-color: #fff;
+  }
+
+.img-banner {
+    opacity: 70%;
+}
+.title-banner {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 400px;
+    margin-left: 80px;
+}
+
+.image {
+    border-radius: 40%;
+}
+
+.card1 {
+    width: 800px;
+    margin-top: 70px;
+    margin-left: 500px;
+}
+
+.card-title1 {
+    font-size: 30px;
+}
+
+.card {
+    margin: 1vw;
+    width: 20vw;
+    border: none;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    margin-top: 15%;
+}
+
