@@ -6,11 +6,13 @@ import { Page404Component } from './routes/page404/page404.component';
 import { ServicesComponent } from './routes/services/services.component';
 import { SignupComponent } from './routes/signup/signup.component';
 import { StoreComponent } from './routes/store/store.component';
+import { WeAreComponent } from './routes/we-are/we-are.component';
 
 const routes: Routes = [
   {path:"", pathMatch: "full",redirectTo: "/home" },
   
   {path: "home", component: HomeComponent},
+  {path: "weAre", component: WeAreComponent},
   {path: "store", component: StoreComponent},
   {path: "login", component: LoginComponent},
   {path: "services", component: ServicesComponent},

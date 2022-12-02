@@ -1,44 +1,53 @@
-<!-- logo -->
-
-
-<!-- Barra de navegación -->
-
-
 <!-- sección principal -->
-
 <div class="contenedor">
-    <figure>
-        <img src="../../../assets/img/home_imagen_1.jpeg" alt="">
-        <div class="capa">
-            <h1>Sector Alimentos</h1>
-        </div>
-    </figure>
-    <figure>
-        <img src="../../../assets/img/home_imagen_2.jpeg" alt="">
-        <div class="capa">
-            <h1>Sector Escolar</h1>
-        </div>
-    </figure>
-    <figure>
-        <img src="../../../assets/img/home_imagen_3.jpeg" alt="">
-        <div class="capa">
-            <h1>Sector Tecnología</h1>
-        </div>
-    </figure>
-    <figure>
-        <img src="../../../assets/img/home_imagen_4.jpeg" alt="">
-        <div class="capa">
-            <h1>Sector Aseo</h1>
-        </div>
-    </figure>
+  <figure>
+    <img
+      src="../../../assets/img/home_imagen_1.jpeg"
+      class="img-fluid"
+      alt=""
+    />
+    <div class="capa">
+      <h1>Sector Alimentos</h1>
     </div>
-    <div class="square-finish">
-        <h1 class="text_1">Te damos la bienvenida a NEPHILA</h1>
-       <div class="mx-auto fs-1 fw-bolder" style="width: 210px;">
-            <button class="btn btn-warning btn-lg px-5"> Conoce más</button>
-        </div>
+  </figure>
+  <figure>
+    <img
+      src="../../../assets/img/home_imagen_2.jpeg"
+      class="img-fluid"
+      alt=""
+    />
+    <div class="capa">
+      <h1>Sector Escolar</h1>
     </div>
-
-
-
-   
+  </figure>
+  <figure>
+    <img
+      src="../../../assets/img/home_imagen_3.jpeg"
+      class="img-fluid"
+      alt=""
+    />
+    <div class="capa">
+      <h1>Sector Tecnología</h1>
+    </div>
+  </figure>
+  <figure>
+    <img
+      src="../../../assets/img/home_imagen_4.jpeg"
+      class="img-fluid"
+      alt=""
+    />
+    <div class="capa">
+      <h1>Sector Aseo</h1>
+    </div>
+  </figure>
+</div>
+<!-- square-finish -->
+<div class="card text-center mt-n5 bg-blue rounded-0">
+  <div class="card-body">
+    <h5 class="card-title fs-1">Te damos la bienvenida a NEPHILA</h5>
+    <p class="card-text fw-light fs-4">La red que necesita tu empresa</p>
+    <a href="#" class="btn btn-warning btn-lg" [routerLink]="['/weAre']"
+      >Conoce más</a
+    >
+  </div>
+</div>

@@ -1,27 +1,16 @@
-.logo{
-    width: 8rem;
-    padding: 10px;
-    margin-left: 60px;
-}
-.bg-blue{
-    background-color: #02152b;
-}
-.text-gold{
-    color: #99804e;
-}
-.text-gold:hover{
-    color: #d9b367;
-}
+
+@media screen and (max-width: 2096px) {
+/* estilos imagenes */
 .contenedor{
-    width: 100vw;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    margin-top: 17px;
+    padding: 0px;
 }
 .contenedor figure{
     position: relative;
-    height: 550px;
-    width: 360px;
+    height: auto;
+    width: 25%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -49,21 +38,45 @@
     transform: scale(1.1,1.1);
 }
 .contenedor figure .capa h1{
+    font-size: 30pt;
     color: #e9b753;
     margin-top: 200px;
-}
-.square-finish{
-    position: absolute;
-    top: 600px;
-    width: 100vw;
-    height: 200px;
-    background-color: #021324;
-}
-.text_1{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
+    padding: 10px;
 }
 
+
+
+}
+
+@media screen and (max-width: 900px){
+    .contenedor figure .capa h1{
+       font-size: 20pt; 
+       margin-top: 80px;
+      
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .contenedor figure .capa h1{
+       font-size: 10pt; 
+       margin-top: 50px;
+      
+    }
+    
+}
+
+/* estilos cuadro */
+ 
+.bg-blue{
+    background-color:   #26466F;
+    color: #ffff;
+    font-weight: bolder;
+}
+
+    
+  
+  
+  
+    
 
 

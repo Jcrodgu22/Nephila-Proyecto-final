@@ -1,70 +1,21 @@
-.pie {
-    width: 100%;
-    height: 300px;
-    background-color: #000a23fe;
-  }
-  
-  li, ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contenedor {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .Acerca {
-    width: 10%;
-    margin: 20px;
-  
-  }
-  .Cont {
-    width: 20%;
-    margin: 20px;
-   
-  }
-  .contacto{
-    width: 20%;
-    margin: 20px;
-  }
-  
-  .item_1 {
-    color: #ffffff;
-    margin-top: 10px;
-  }
-  .item-2 {
-    color: #ffffff;
-  }
-  .img_cont {
-    width: 20px;
-    margin-right: 10px;
-    filter: invert(80%);
-  }
-  
-  .contenedor li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: lighter;
-  }
-  
-  .logo2{
-    margin: 5px;
-  }
-  .logo2:hover{
-    transform: scale(1.2);
-    
-  }
-  .linea_footer{
+.img_sice {
+  width: 55%;
+}
+.bg_blue {
+  background-color: #000a23fe;
+}
+.img_sice1 {
+  width: 10%;
+  height: 10%;
+  filter: invert(80%);
+}
+.img_sice2 {
+  width: 10%;
+  height: 10%;
+}
+.linea{
     width: 80%;
-    border-top: 2px solid  #99804e;
+    height: 2px;
+    background-color: #99804e;
     margin: auto;
-  }
-  .text_footer{
-    color: #ffff;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: lighter;
-  }
-  
+}
