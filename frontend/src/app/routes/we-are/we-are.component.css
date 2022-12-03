@@ -7,11 +7,11 @@ body{
 }
 .title-banner {
     text-align: center;
-    font-size: 32px;
+    font-size: 1.6vw;
     font-weight: bold;
     align-items: center;
-    margin-bottom: 400px;
-    margin-left: 80px;
+    margin-bottom: 21vw;
+    margin-left: 5vw;
 }
 
 .image {
@@ -19,13 +19,13 @@ body{
 }
 
 .card1 {
-    width: 800px;
-    margin-top: 70px;
-    margin-left: 500px;
+    width: 42vw;
+    margin-top: 4vw;
+    margin-left: 26vw;
 }
 
 .card-title1 {
-    font-size: 30px;
+    font-size: 1.6vw;
 }
 
 .card {
