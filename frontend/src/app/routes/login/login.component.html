@@ -1,38 +1,37 @@
+<div class="d-flex justify-content-center  mt-4 mb-4">
+  <div class="border p-3 rounded shadow-lg p-3 mb-5 bg-body rounded" style="width: 35rem">
+    <h2 class="text-center pb-3 h4 pb-2 mb-4 text-dark border-bottom border-dark fw-bold">LOGIN</h2>
 
-     <div class=" login d-flex justify-content-center">
-        <div class="border p-3, rounded" style="width: 29rem">
-          <h3 class="text-center pb-4"> Ingresar </h3>
-      
-          <form #loginForm="">
-            <div class="mb-3">
-              <label for="name" class="form-label" style="margin-left: 1rem">Correo electronico</label>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                placeholder="Dirección de correo electronico"
-                name="email"
-                
-              />
-            </div>
-      
-            <div class="mb-4">
-              <label for="name" class="form-label" style="margin-left: 1rem;">Contraseña</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                placeholder="Escribe una contraseña"
-                name="password"
-                
-              />
-            </div>
-          </form>
-          <div class="button d-flex justify-content-center">
-            <button class="btn btn-warning  fw-bold d-flex align-items-center"
-            
-            class="material-icons pe-4"> Iniciar sesión
-                        
-            </button>
-        </div>
+    <form #loginForm="ngForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">E-mail</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          placeholder="Type your E-mail"
+          name="email"
+          [ngModel]="this.userService.currentUser.email"
+        />
       </div>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Contraseña</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Escribe una contraseña"
+          name="password"
+          [(ngModel)]="this.userService.currentUser.password"
+        />
+      </div>
+    </form>
+
+    <button
+        class="btn btn-secondary btn btn-secondary btn-md "
+        (click)="this.login(loginForm)">     
+        Ingresa
+      </button>
+  </div>
+</div>

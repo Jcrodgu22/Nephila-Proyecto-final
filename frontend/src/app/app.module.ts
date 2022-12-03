@@ -4,37 +4,38 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CardsComponent } from './components/cards/cards.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { FormularyComponent } from './components/formulary/formulary.component';
-import { AdminComponent } from './routes/admin/admin.component';
 import { HomeComponent } from './routes/home/home.component';
 import { LoginComponent } from './routes/login/login.component';
-import { Page404Component } from './routes/page404/page404.component';
 import { SignupComponent } from './routes/signup/signup.component';
+import { AdminComponent } from './routes/admin/admin.component';
+import { Page404Component } from './routes/page404/page404.component';
+//import { CardComponent } from './components/card/card.component';
+import { HttpClientModule } from '@angular/common/http' //-- permite consumir apis con el cliente http de angular
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from "./components/footer/footer.component";
 import { StoreComponent } from './routes/store/store.component';
 import { WeAreComponent } from './routes/we-are/we-are.component';
-import { AdminCComponent } from './routes/admin-c/admin-c.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardsComponent,
+    //CardsComponent,
     FooterComponent,
-    FormularyComponent,
+    //FormularyComponent,
     AdminComponent,
     HomeComponent,
     LoginComponent,
     Page404Component,
     SignupComponent,
     StoreComponent,
-    WeAreComponent,
-    AdminCComponent
+    WeAreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
