@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from "./components/footer/footer.component";
 import { StoreComponent } from './routes/store/store.component';
 import { WeAreComponent } from './routes/we-are/we-are.component';
+import { ServicesComponent } from './routes/services/services.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WeAreComponent } from './routes/we-are/we-are.component';
     Page404Component,
     SignupComponent,
     StoreComponent,
-    WeAreComponent
+    WeAreComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

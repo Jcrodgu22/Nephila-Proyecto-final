@@ -1,0 +1,90 @@
+body {
+  background-color: #ffffff;
+}
+
+
+.title-banner {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 21vw;
+  margin-left: 5vw;
+}
+
+.image {
+  border-radius: 40%;
+}
+
+.card1 {
+  width: 42vw;
+  margin-top: 4vw;
+  margin-left: 26vw;
+}
+
+.card-title1 {
+  font-size: 30pt;
+}
+
+.card-text1 {
+    font-size: 17pt;
+}
+
+.card {
+  margin: 1vw;
+  width: 20vw;
+  border: none;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98vw;
+  margin-top: 15%;
+}
+
+.card-title {
+    font-size: 25pt;
+}
+
+.card-text {
+    font-size: 14pt;
+}
+
+@media screen and (max-width: 900px) {
+  .banner figure {
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+
+  .card1 figure {
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+
+  .card figure {
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner figure {
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+
+  .card1 figure {
+    display: flex;
+    margin: none;
+    width: 100%;
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+
+  .card figure {
+    font-size: 20pt;
+    margin-top: 80px;
+  }
+}
