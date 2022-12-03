@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
+import { User } from 'src/app/models/user.model';
+import { NgForm } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +11,73 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
+  }
+
+  signUp(form: NgForm){
+
+  console.log(form.value)
+
+    let {firstName, lastName, email, password, confirmPassword} = form.value
+
+    if (!firstName || !lastName || !email || !password || !confirmPassword){
+     
+      Swal.fire({
+        title: 'ERROR!',
+        text: 'Debes llenar todos los campos',
+        imageUrl: 'https://www.hostingplus.pe/wp-content/uploads/2020/02/error.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+
+      return 
+    }
+
+    if(password !== confirmPassword){
+     
+      Swal.fire({
+        title: 'ERROR!',
+        text: 'Las contraseñas NO coinciden',
+        imageUrl: 'https://www.hostingplus.pe/wp-content/uploads/2020/02/error.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+
+      return 
+      
+    }
+
+    delete form.value.confirmPassword
+    
+    this.userService.signUp(form.value).subscribe(
+      (res) => {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Bienvenido a Nephila',
+          showConfirmButton: false,
+          timer: 1500
+        })
+
+        //navigate nos lleva al login
+      },
+      (err) => 
+          Swal.fire({
+            title: 'ERROR!',
+            text: 'Algo ha salido mal...',
+            imageUrl: 'https://www.hostingplus.pe/wp-content/uploads/2020/02/error.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
+        
+      
+    )
+
   }
 
 }
