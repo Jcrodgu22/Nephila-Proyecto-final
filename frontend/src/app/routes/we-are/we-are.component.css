@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #bdbcbc;
 }
 
 .img-banner {
@@ -7,7 +7,7 @@ body {
 }
 .title-banner {
   text-align: center;
-  font-size: 1.6vw;
+  font-size: 30pt;
   font-weight: bold;
   align-items: center;
   margin-bottom: 21vw;
@@ -28,6 +28,10 @@ body {
   font-size: 30pt;
 }
 
+.card-text1 {
+    font-size: 17pt;
+}
+
 .card {
   margin: 1vw;
   width: 20vw;
@@ -40,6 +44,14 @@ body {
   justify-content: center;
   width: 98vw;
   margin-top: 15%;
+}
+
+.card-title {
+    font-size: 25pt;
+}
+
+.card-text {
+    font-size: 14pt;
 }
 
 @media screen and (max-width: 900px) {
