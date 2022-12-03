@@ -11,15 +11,13 @@ import { StoreComponent } from './routes/store/store.component';
 import { SignupComponent } from './routes/signup/signup.component';
 
 const routes: Routes = [
-  //{path: laruta, component: elcomponente que se va a renderizar cuando ponga esa ruta}
-
-  {path: "", pathMatch: "full", redirectTo: "/home"},
-  {path:"", component:AppComponent,},
-  {path: "home", component: HomeComponent,},
-  {path: "admin", component: AdminComponent,}, //canActivate: [AdminGuard]},
-  {path: "store", component: StoreComponent,},
-  {path: "signup", component: SignupComponent},
+  {path:"", pathMatch: "full",redirectTo: "/home" },
+  
+  {path: "home", component: HomeComponent},
+  {path: "store", component: StoreComponent},
   {path: "login", component: LoginComponent},
+  {path: "signup", component: SignupComponent},
+  {path: "admin", component: AdminComponent},
   {path:"**", component: Page404Component },
 ];
 
