@@ -1,1 +1,137 @@
-<p>admin works!</p>
+<section class="admin_vendedor">
+
+    <ul class="barra_admin nav nav-tabs navbar-dark" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="boton-nav nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Compra</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="boton-nav nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Venta</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="boton-nav nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="boton-nav nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Usuario</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"></div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"></div>
+      </div>
+
+      <nav class="barra-buscador navbar bg-light">
+        <div class="container-fluid">
+          <a class="brand navbar-brand">Prospectos</a>
+          <form class="d-flex" role="search">
+            <input class="buscador form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="tareas">
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-people-fill"></i></h5>
+            </button>
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-coin"></i></h5>
+            </button>
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-card-checklist"></i></h5>
+            </button>
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-megaphone-fill"></i></h5>
+            </button>
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-envelope"></i></h5>
+            </button>
+            <button type="button" class="btn">
+              <h5><i class="icono bi bi-graph-up-arrow"></i></h5>
+            </button>
+          </div>
+
+          <section class="visualizador-tareas">
+
+            <div class="organizador btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Small button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mas reciente</a></li>
+                <li><a class="dropdown-item" href="#">Mejor calificacion</a></li>
+                <li><a class="dropdown-item" href="#">Mejor calidad</a></li>
+                
+              </ul>
+            
+            </div>
+
+            <ol class=" lista-candidatos list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+            </ol>
+           
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+
+          </section>
+
+    </div>
+
+</section>

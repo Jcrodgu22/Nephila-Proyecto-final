@@ -1,0 +1,73 @@
+.btn-group-vertical{
+    background-color: #26466F;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 1vw;
+    box-shadow: 1px 1px 3px 2px #607EAA;
+}
+
+.barra_admin{
+    font-weight: 500;
+    color: aliceblue;
+    background-color: #26466F;
+    
+}
+
+.boton-nav{
+    color: aliceblue;
+}
+
+.icono{
+    color: aqua;
+    
+}
+.barra-buscador{
+    font-size: x-large;
+   
+}
+.brand{
+    font-size: medium;
+    font-weight: bold;
+    color: grey;
+}
+.buscador{
+    width: 25vw;
+}
+
+.visualizador-tareas{
+    background-color: #26466F;
+    height: 500px;
+    width: 91%;
+    margin-left: 2vw;
+    margin-left: 2vw;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px 2px #607EAA;
+}
+
+.tareas{
+    display: flex;
+}
+
+.organizador{
+    margin-left: 80vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lista-cadidatos{
+   width: 70%;
+}
+
+.pagination{
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.categoria{
+    margin-top: 10px;
+    display: list-item;
+}

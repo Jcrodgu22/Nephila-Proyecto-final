@@ -14,6 +14,7 @@ import { Page404Component } from './routes/page404/page404.component';
 import { SignupComponent } from './routes/signup/signup.component';
 import { StoreComponent } from './routes/store/store.component';
 import { WeAreComponent } from './routes/we-are/we-are.component';
+import { AdminCComponent } from './routes/admin-c/admin-c.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WeAreComponent } from './routes/we-are/we-are.component';
     Page404Component,
     SignupComponent,
     StoreComponent,
-    WeAreComponent
+    WeAreComponent,
+    AdminCComponent
   ],
   imports: [
     BrowserModule,

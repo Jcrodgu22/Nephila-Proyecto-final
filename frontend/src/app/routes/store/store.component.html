@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Admin</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Veder</a>
@@ -24,7 +24,9 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active">Carrito</a>
+            <a class="nav-link active">
+              <i class="carrito bi bi-cart-check"></i>
+            </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -37,44 +39,97 @@
 
 <section class="store">
 
-    <ul class="list-group shadow">
+  <ul class="list-group">
+    <li class="list-group-item">
+      
+      <div class="categoria dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categoria
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Yogourt</a></li>
+          <li><a class="dropdown-item" href="#">Leche</a></li>
+          <li><a class="dropdown-item" href="#">Jugos</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <h6>Marca</h6>
+      <ul class="selector list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+          <label class="form-check-label" for="firstCheckbox">Latti</label>
         </li>
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-          <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+          <label class="form-check-label" for="secondCheckbox">El recreo</label>
         </li>
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-          <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+          <label class="form-check-label" for="thirdCheckbox">nnnnn</label>
         </li>
-        <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-          </li>
       </ul>
+    </li>
+    <li class="list-group-item">
+    <div>
+      <h6>Calificación</h6>
+      <a href="">
+      <h6 class="estrellas">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i> o mas</i>
+      </h6>
+    </a>
+    <a href="">
+      <h6 class="estrellas">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i> o mas</i>
+      </h6>
+    </a>
+    <a href="">
+      <h6 class="estrellas">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i> o mas</i>
+      </h6>
+    </a>
+      <a href="">
+        <h6 class="estrellas">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i> o mas</i>
+        </h6>
+      </a>
+  </div>
+    </li>
+    <li class="list-group-item">
+      <h6>Precio</h6>
+    <ul class="precios">
+      <li>Menos de $1 mil</li>
+      <li>Menos de $3 mil</li>
+      <li>Menos de $5 mil</li>
+      <li>Menos de $10 mil</li>
+    </ul>
+      
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+          <label class="form-check-label" for="secondCheckbox">Solo en existencias</label>
+    </li>
+  </ul>
 
 <section class="card-holder">
   <section class="cards">
@@ -144,5 +199,90 @@
       </div>
 
   </section>
+
+  <section class="cards">
+
+    <div class="card shadow mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section class="cards">
+
+    <div class="card shadow mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Anterior</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
+
 </section>
 </section>
