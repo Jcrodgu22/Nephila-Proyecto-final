@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-store',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponent implements OnInit {
 
-  constructor() { }
+  constructor(public productService: ProductService) { }
 
   ngOnInit(): void {
+    this.getProducts()
   }
+  getProducts(){
+  
+    let response = this.productService.getProducts()
+ 
+   // traduce el observable, hay que suscribirse
+    response.subscribe((res: any) => {
+    this.productService.products = res.data 
+    console.log(this.productService.products)
+    })
+   }
 
 }

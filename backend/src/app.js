@@ -13,10 +13,10 @@ app.use(express.json())
 app.get("/api", (req, res) => {
     res.status(200).json({msg: "Nephila v1.0.0"})
 })
-/* //app.use(/activadorDeRutas, importacion de las rutas que se pueden usar con esta ruta)
+
 app.use("/product", require("./routes/product"))
 //user routes
-app.use("/user", require("./routes/user")) */
+//app.use("/user", require("./routes/user")) */
 
 
 app.listen(port, () => {console.log("Api corriendo en el pueto", port)})
