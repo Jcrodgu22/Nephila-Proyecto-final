@@ -5,8 +5,8 @@
     .contenedor{
         display: flex;
         justify-content: center;
-        margin-top: 17px;
-        padding: 0px;
+        background: #26466F;
+        
     }
     .contenedor figure{
         position: relative;
