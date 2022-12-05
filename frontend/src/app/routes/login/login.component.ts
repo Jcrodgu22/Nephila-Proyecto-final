@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
       (err) => Swal.fire
       ({
         title: 'ERROR!',
-        text: 'Algo ha salido mal...',
+        text: 'El usuario no está registrado',
         imageUrl: 'https://www.hostingplus.pe/wp-content/uploads/2020/02/error.jpg',
         imageWidth: 400,
         imageHeight: 200,

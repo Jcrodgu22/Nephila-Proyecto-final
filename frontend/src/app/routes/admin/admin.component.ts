@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { NgForm } from '@angular/forms';
 import { Product } from 'src/app/models/product.model';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-admin',
@@ -55,7 +56,16 @@ export class AdminComponent implements OnInit {
     //deconstruir el objeto
     let { name, description } = form.value
 
-    if(!name || !description) return alert("Diligencie por favor todos los datos")
+    if(!name || !description)
+    Swal.fire({
+      title: 'ERROR!',
+      text: 'Diligencia por favor todos los campos',
+      imageUrl: 'https://www.hostingplus.pe/wp-content/uploads/2020/02/error.jpg',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+    })
+    return 
     this.productService.createProduct(form.value).subscribe((res: any) => {
       this.getProducts() // para actualizar la tabla
       alert(res.msg);
@@ -63,7 +73,8 @@ export class AdminComponent implements OnInit {
     })
   }
 
-  deleteProduct(id: string, name: string){
+  deleteProduct(id: string, name: string)
+  {
 
     let isDeleted = confirm (`Esta seguro que desea eliminar el producto "${name}"`);
 

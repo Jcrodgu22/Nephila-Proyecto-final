@@ -20,7 +20,7 @@ export class ProductService {
    }
 
   getProducts(){
-    return this.http.get(`${this.URL_API}/get-product`)
+    return this.http.get(`${this.URL_API}/get-products`)
   }
 
   //metodo de crear producto 

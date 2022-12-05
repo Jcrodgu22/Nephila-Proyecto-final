@@ -60,7 +60,7 @@ export class SignupComponent implements OnInit {
           icon: 'success',
           title: 'Bienvenido a Nephila',
           showConfirmButton: false,
-          timer: 1500
+          timer: 2000
         })
 
         //navigate nos lleva al login

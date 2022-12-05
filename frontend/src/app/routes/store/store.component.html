@@ -56,7 +56,7 @@
     <li class="list-group-item">
       <h6>Marca</h6>
       <ul class="selector list-group">
-        <li class="list-group-item">
+        <li class="marca list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
           <label class="form-check-label" for="firstCheckbox">Latti</label>
         </li>
@@ -116,14 +116,25 @@
   </div>
     </li>
     <li class="list-group-item">
-      <h6>Precio</h6>
-    <ul class="precios">
-      <li>Menos de $1 mil</li>
-      <li>Menos de $3 mil</li>
-      <li>Menos de $5 mil</li>
-      <li>Menos de $10 mil</li>
-    </ul>
-      
+      <h6>Marca</h6>
+      <ul class="precios">
+        <li class="item-precio">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+          <label class="form-check-label" for="firstCheckbox">Menos de $ mil</label>
+        </li>
+        <li class="item-precio">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+          <label class="form-check-label" for="secondCheckbox">Menos de $3 mil</label>
+        </li>
+        <li class="item-precio">
+          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+          <label class="form-check-label" for="thirdCheckbox">Menos de $5 mil</label>
+        </li>
+        <li class="item-precio">
+          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+          <label class="form-check-label" for="thirdCheckbox">Menos de $10 mil</label>
+        </li>
+      </ul>
     </li>
     <li class="list-group-item">
       <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
@@ -138,38 +149,44 @@
 
   </section>
 
-  <section class="cards">
+  <section class="cards container mt-5 d-flex justify-content flex-wrap">
+    
 
-   <app-card>
-    <!-- 
-    *ngFor='let product of this.productService.products'
-    title="{{product.name}}" 
-    description="{{product.description}}" 
-    image="{{product.image}}" 
-    btnColor="{{product.btnColor}}" 
-    price= "{{product.price}}"
-    btnText="{{product.btnText}}"
-    cardSice="{{product.cardSice}}"
-    stock="{{product.stock}}" -->
+   <app-card 
+   *ngFor='let product of this.productService.products'
+   title="{{product.name}}" 
+   description="{{product.description}}" 
+   image="{{product.image}}" 
+   btnColor="{{product.btnColor}}" 
+   price= "{{product.price}}"
+   btnText="{{product.btnText}}"
+   cardSice="{{product.cardSice}}"
+   stock="{{product.stock}}"
+   > 
+    
    </app-card>
+
+
 
   </section>
 
-  <nav aria-label="...">
-    <ul class="pagination">
-      <li class="page-item disabled">
-        <a class="page-link">Anterior</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item active" aria-current="page">
-        <a class="page-link" href="#">2</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Siguiente</a>
-      </li>
-    </ul>
-  </nav>
+</section>
+
 
 </section>
-</section>
+
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Siguiente</a>
+    </li>
+  </ul>
+</nav>

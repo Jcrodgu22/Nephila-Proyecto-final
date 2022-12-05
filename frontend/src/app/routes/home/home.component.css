@@ -2,12 +2,12 @@
 @media screen and (max-width: 2096px) {
 /* estilos imagenes */
 
-    .contenedor{
-        display: flex;
-        justify-content: center;
-        margin-top: 17px;
-        padding: 0px;
-    }
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background: #26466F;
+    
+}
     .contenedor figure{
         position: relative;
         height: auto;
