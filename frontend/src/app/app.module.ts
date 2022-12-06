@@ -17,6 +17,7 @@ import { StoreComponent } from './routes/store/store.component';
 import { WeAreComponent } from './routes/we-are/we-are.component';
 import { ServicesComponent } from './routes/services/services.component';
 import { CardComponent } from './components/card/card.component';
+import { ShopcartComponent } from './routes/shopcart/shopcart.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { CardComponent } from './components/card/card.component';
     WeAreComponent,
     ServicesComponent,
     CardComponent,
+    ShopcartComponent,
     
   ],
   imports: [

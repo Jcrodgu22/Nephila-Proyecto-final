@@ -8,7 +8,7 @@ const { Schema } = mongoose
 const productSchema = new Schema(
     {
         name: { type: String, required: true},
-        price: { type: Number, required: true},
+        price: { type: String, required: true},
         description: { type: String, required: true}, // las llaves de lacollecion
         image: { type: String, required: true},
         stock: { type: Number, default: 0},

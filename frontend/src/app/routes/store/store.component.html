@@ -25,13 +25,13 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active">
-              <i class="carrito bi bi-cart-check"></i>
+              
             </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </div>
@@ -157,9 +157,9 @@
    title="{{product.name}}" 
    description="{{product.description}}" 
    image="{{product.image}}" 
-   btnColor="{{product.btnColor}}" 
+   btnColor="success" 
    price= "{{product.price}}"
-   btnText="{{product.btnText}}"
+   btnText="comprar"
    cardSice="{{product.cardSice}}"
    stock="{{product.stock}}"
    > 
@@ -190,3 +190,6 @@
     </li>
   </ul>
 </nav>
+<div class="p-3 d-flex fixed-bottom justify-content-end">
+  <img class="material-icons p-3 bg-primary text-white rounded-circle" style="cursor: pointer;" [routerLink]="['/shopcart']" src="../../../assets/img/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+</div>

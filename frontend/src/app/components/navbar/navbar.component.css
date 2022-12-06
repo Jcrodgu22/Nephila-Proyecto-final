@@ -13,3 +13,10 @@
 .logo{
     width: 140px;
 }
+.btn{
+    margin-top: 10px;
+    background-color: #26466F;
+    color: white;
+    height: 7vh;
+    margin-right: 30px;
+}

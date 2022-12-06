@@ -4,70 +4,69 @@ body {
 
 
 .title-banner {
-  text-align: center;
+  
   font-size: 30pt;
   font-weight: bold;
   align-items: center;
   margin-bottom: 21vw;
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 
 .image {
-  border-radius: 40%;
+  border-radius:20%;
+  margin-left: 7vw;
+  margin-top: 2vw;
 }
 
 .card1 {
-  width: 42vw;
-  margin-top: 4vw;
-  margin-left: 26vw;
+  width: 80vw;
+  margin-top: 3vw;
+  margin-left: 10vw;
+  text-align:center;
+
 }
 
+
 .card-title1 {
-  font-size: 30pt;
+  font-size: 18pt;
 }
 
 .card-text1 {
-    font-size: 17pt;
+    font-size: 16pt;
+    text-align: justify;
+     margin-left: 20vw;
+    
 }
 
 .card {
-  margin: 1vw;
-  width: 20vw;
+  margin: 2vw;
+  width: 18vw;
   border: none;
+  text-align: justify;
+ 
 }
+
 
 .card-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 98vw;
-  margin-top: 15%;
+  width: 90vw;
+  margin-top: 3vw;
+  text-align: justify;
+  margin: 3vw;
 }
 
 .card-title {
-    font-size: 25pt;
+    font-size: 18pt;
+    white-space: 5vw;
 }
 
 .card-text {
     font-size: 14pt;
+    text-align: justify;
 }
 
-@media screen and (max-width: 900px) {
-  .banner figure {
-    font-size: 20pt;
-    margin-top: 80px;
-  }
-
-  .card1 figure {
-    font-size: 20pt;
-    margin-top: 80px;
-  }
-
-  .card figure {
-    font-size: 20pt;
-    margin-top: 80px;
-  }
-}
 
 @media screen and (max-width: 400px) {
   .banner figure {
