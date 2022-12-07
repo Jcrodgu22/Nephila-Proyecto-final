@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
   @Input() description: string | undefined
   @Input() image: string | undefined
   @Input() btnText: string | undefined
-  @Input() price: string | undefined
+  @Input() price: any | undefined
   @Input() btnColor: string | undefined
   @Input() cardSice: string | undefined
   @Input() stock: any | undefined

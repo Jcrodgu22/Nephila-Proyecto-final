@@ -9,8 +9,9 @@ import { LoginComponent } from './routes/login/login.component';
 import { Page404Component } from './routes/page404/page404.component';
 import { StoreComponent } from './routes/store/store.component';
 import { SignupComponent } from './routes/signup/signup.component';
-import { WeAreComponent } from './routes/we-are/we-are.component';
 import { ShopcartComponent } from './routes/shopcart/shopcart.component';
+import { PerfilComponent } from './routes/perfil/perfil.component';
+import { NosotrosComponent } from './routes/nosotros/nosotros.component';
 
 const routes: Routes = [
   {path:"", pathMatch: "full",redirectTo: "/home" },
@@ -20,8 +21,9 @@ const routes: Routes = [
   {path: "login", component: LoginComponent},
   {path: "signup", component: SignupComponent},
   {path: "admin", component: AdminComponent},//canActivate: [AdminGuard]},
-  {path: "weAre", component: WeAreComponent},
   {path: "shopcart", component: ShopcartComponent},
+  {path: "perfil", component: PerfilComponent},
+  {path: "nosotros", component: NosotrosComponent},
   {path:"**", component: Page404Component },
 ];
 

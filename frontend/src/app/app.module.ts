@@ -14,10 +14,11 @@ import { HttpClientModule } from '@angular/common/http' //-- permite consumir ap
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from "./components/footer/footer.component";
 import { StoreComponent } from './routes/store/store.component';
-import { WeAreComponent } from './routes/we-are/we-are.component';
 import { ServicesComponent } from './routes/services/services.component';
 import { CardComponent } from './components/card/card.component';
 import { ShopcartComponent } from './routes/shopcart/shopcart.component';
+import { PerfilComponent } from './routes/perfil/perfil.component';
+import { NosotrosComponent } from './routes/nosotros/nosotros.component';
 
 
 @NgModule({
@@ -32,10 +33,11 @@ import { ShopcartComponent } from './routes/shopcart/shopcart.component';
     Page404Component,
     SignupComponent,
     StoreComponent,
-    WeAreComponent,
     ServicesComponent,
     CardComponent,
     ShopcartComponent,
+    PerfilComponent,
+    NosotrosComponent,
     
   ],
   imports: [

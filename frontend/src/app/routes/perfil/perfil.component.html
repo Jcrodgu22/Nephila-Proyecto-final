@@ -1,0 +1,16 @@
+<div class="card d d-flex justify-content-center mt-5 border border-5 rounded-3 shadow-lg text-center" style="width: 22rem;">
+    <img src="../../../assets/img/perfil.jfif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">USUARIO NEPHILA</h5>
+      <p class="card-text text-center fw-light fst-italic ">Para brindarte una excelente experiencia es importante que tus datos estén actualizados.</p>
+    </div>
+    <ul class="list-group list-group-flush text-start">
+      <li class="list-group-item">Nombre de Usuario: {{ this.userService.decodeToken().firstName}}</li>
+      <li class="list-group-item">Nit: {{ this.userService.decodeToken().lastName}}</li>
+      <li class="list-group-item">E-mail {{ this.userService.decodeToken().email}}L</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link fw-bold">Salir</a>
+      <a href="#" class="card-link fw-bold">Actualizar datos</a>
+    </div>
+  </div>
