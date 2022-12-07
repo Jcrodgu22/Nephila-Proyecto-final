@@ -19,6 +19,7 @@ import { CardComponent } from './components/card/card.component';
 import { ShopcartComponent } from './routes/shopcart/shopcart.component';
 import { PerfilComponent } from './routes/perfil/perfil.component';
 import { NosotrosComponent } from './routes/nosotros/nosotros.component';
+import { DetallesProductComponent } from './routes/detalles-product/detalles-product.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { NosotrosComponent } from './routes/nosotros/nosotros.component';
     ShopcartComponent,
     PerfilComponent,
     NosotrosComponent,
+    DetallesProductComponent,
     
   ],
   imports: [

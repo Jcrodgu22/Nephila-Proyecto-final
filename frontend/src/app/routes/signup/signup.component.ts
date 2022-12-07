@@ -3,6 +3,7 @@ import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/app/models/user.model';
 import { NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -11,7 +12,7 @@ import Swal from 'sweetalert2';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(public userService: UserService) { }
+  constructor(public userService: UserService, public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -63,7 +64,7 @@ export class SignupComponent implements OnInit {
           timer: 2000
         })
 
-        //navigate nos lleva al login
+        this.router.navigate(['/login'])
       },
       (err) => 
           Swal.fire({

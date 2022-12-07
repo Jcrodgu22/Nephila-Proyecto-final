@@ -23,9 +23,12 @@ export class ShopcartComponent implements OnInit {
 
   deleteFromCart(id: string = '') {
     let products = JSON.parse(localStorage.getItem('productShopcart') || '[]');
+    console.log(products)
 
     products = products.filter((product: any) => product.id !== id);
+    console.log(products)
     let string = JSON.stringify(products);
+    console.log(string)
 
     
     localStorage.setItem('productShopcart', string);

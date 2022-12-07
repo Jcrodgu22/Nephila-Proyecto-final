@@ -30,7 +30,7 @@
           
           <ul class="dropdown-menu fs-6 p-6">
             <li><a class="dropdown-item  text-dark" style="cursor: pointer;">Configuración</a></li>
-            <li><a class="dropdown-item  text-dark" href="#">Ver Perfil</a></li>
+            <li><a class="dropdown-item  text-dark" [routerLink]="['perfil']">Ver Perfil</a></li>
             <hr class="dropdown-divider">
             <li><a class="dropdown-item  text-dark" (click)="this.userService.logOut()">Cerrar Sesión</a></li>
           </ul>
